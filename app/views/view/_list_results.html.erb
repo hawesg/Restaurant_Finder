@@ -1,0 +1,15 @@
+<h3> Your Results: </h3>
+<% @results.each do |x| %>
+	<p><%= raw x.name %><br />
+		<% if x.phone %>		
+			<%= x.phone %>
+			<%= image_tag("contacts2.png", :class => "contacts") %><br />
+		<% end %>
+		<% if x.address %>
+			<%= x.address %><br />
+		<% end %>
+		<% if x.menu %>
+			<a href="<%= x.menu %>"> menu </a>	
+		<% end %>
+	</p>
+<% end %>

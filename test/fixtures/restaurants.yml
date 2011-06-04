@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  deliver: false
+  rank: 1
+  walk: false
+  phone: MyString
+  address: MyString
+  menu: MyString
+  category: 
+
+two:
+  name: MyString
+  deliver: false
+  rank: 1
+  walk: false
+  phone: MyString
+  address: MyString
+  menu: MyString
+  category: 

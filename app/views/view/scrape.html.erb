@@ -1,0 +1,5 @@
+<% form_tag url_for(:action => "from_menu_pages_url") do %>
+<%= label_tag 'url', "Menupages URL" %> 
+<%= text_field_tag 'url' %>
+<%= submit_tag nil, :class => "form_submit" %>
+<% end %>
