@@ -1,4 +1,4 @@
-<p> Here you can enter a Menupages&trade; url and have the data inserted into the database as an example you can try "http://losangeles.menupages.com/restaurants/katana/" the walking field is determined by whether the restaurants zip code matches mine and delivery is done by matching for the word delivery in the features div. This does not handle categories it is mostly meant to save time in data entry.</p>   
+<p> In this section, you can enter a Menupage&trade; URL and have the data inserted into the database. For example, you can try "http://losangeles.menupages.com/restaurants/katana/". The walking field is determined by whether the restaurant's zip code matches mine and delivery is done by matching for the word delivery in the features division. This does not handle categories or special characters. Rather, it is meant to save time in data entry.</p>
 <% form_tag url_for(:action => "from_menu_pages_url") do %>
 	<%= label_tag 'url', "Menupages URL" %> 
 	<%= text_field_tag 'url' %>
