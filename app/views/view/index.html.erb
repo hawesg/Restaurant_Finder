@@ -1,1 +1,6 @@
+<% if  @pagination %>
+	<%= render :partial => "paginate" %>
+<% end %>	
+<ul id="wrapper2" class="wrapper">
 <%= render :partial => "results", :collection => @results %>
+</ul>

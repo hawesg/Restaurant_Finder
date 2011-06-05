@@ -1,4 +1,4 @@
-	<p><%= raw results.name %><br />
+	<li><strong><%= raw results.name %></strong><br />
 		<% if results.phone %>		
 			<%= results.phone %>
 			<%= image_tag("http://www.shallowgallery.com/images/contacts2.png", :class => "contacts") %><br />
@@ -9,5 +9,5 @@
 		<% if results.menu %>
 			<a href="<%= results.menu %>"> menu </a>	
 		<% end %>
-	</p>
+	</li>
 

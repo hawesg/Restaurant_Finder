@@ -9,6 +9,7 @@
 	<link  href="http://fonts.googleapis.com/css?family=Nobile:regular,bold" rel="stylesheet" type="text/css" >
 	<%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js' %>
 	<%= javascript_include_tag 'rails_jquery.js' %>
+	<%= javascript_include_tag 'page.js' %>
 	<%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js' %>
 	<%= javascript_include_tag 'jquery-ui-timepicker-addon.js' %>
 	<%= javascript_include_tag 'application.js' %>
@@ -62,6 +63,8 @@
 					<br />
 					<%= label_tag 'limit', "How Many Results Do You Want?" %>
 					<%= number_field_tag 'limit', '30', :in => 1...50 %>
+					<%= label_tag 'paginate', 'Pagination?' %>
+					<%= check_box_tag 'paginate', 't' %><br />
 					<%= submit_tag "Submit", :class => "form_submit" %>
 				<% end %>
 			</div>
@@ -69,6 +72,9 @@
 		<div id="footer">
 			<p>Garrett Hawes | CS 80 | Santa Monica College | 2011</p>
 			<div class="footer_links"> 
+				<a href="https://github.com/hawesg/Restaurant-Finder/tree/new" id="git">
+					Git Hub
+				</a>
 				<a href="http://validator.w3.org/check?uri=referer" id="validHtml">
 				   Valid Html
 				</a>

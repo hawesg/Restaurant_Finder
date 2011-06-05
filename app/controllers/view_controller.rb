@@ -5,6 +5,7 @@ class ViewController < ApplicationController
     del = params[:deliver] || [true, false]
     walk = params[:walk] || [true, false]
     cat = params[:cat_id] || Category.all.collect(&:id)
+    @pagination = params[:paginate]
     if params[:cat_id]
       @results = Restaurant.limit(params[:limit] || 50 ).random.find_all_by_deliver_and_walk_and_category_id(del, walk, cat)
     else 
