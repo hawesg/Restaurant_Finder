@@ -1,6 +1,7 @@
 class Restaurant < ActiveRecord::Base
   belongs_to :category
-  scope :random, :order => "Random()"
+  validates_presence_of :name
+  scope :random, :order => "Rand()"
   def self.list_options
     Category.all.map{|s| {"id" => s.id, "name" => s.name} }
   end

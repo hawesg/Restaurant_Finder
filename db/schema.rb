@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110526222210) do
+ActiveRecord::Schema.define(:version => 20110604061822) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(:version => 20110526222210) do
   create_table "restaurants", :force => true do |t|
     t.string   "name"
     t.boolean  "deliver"
-    t.integer  "rank"
     t.boolean  "walk"
     t.string   "phone"
     t.string   "address"

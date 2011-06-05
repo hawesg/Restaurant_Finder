@@ -1,128 +1,146 @@
-body,
-html {
-margin:0;
-padding:0;
-color:#000;
-background: #00ff00 url('http://www.fulbrightblog.ca/wp-content/themes/glossy/images/main-bg.gif') repeat;
-font-family: 'Nobile', serif;
+body, html {
+	margin:0;
+	padding:0;
+	color:#000;
+	font-family: 'Nobile', serif;
 }
 #wrap {
-width:750px;
-margin:0 auto;
-background:#99c;
+	width:750px;
+	margin:0 auto;
+	/*background:#99c;*/
 } 
-
-#main {
-float:left;
-width:500px;
-background:#9c9;
-}
 #main p{
 	font-size: .8em;
 }
 
-#footer {
-clear:both;
-background:#cc9;
-}
-
-#sidebar {
-float:right;
-width:250px;
-background:#99c;
-}
 #nav ul {
-margin:0;
-padding:0;
-list-style:none;
+	margin:0;
+	padding:0;
+	list-style:none;
 }
 #nav li {
-display:inline;
-margin:0;
-padding:0;
+	display:inline;
+	margin:0;
+	padding:0;
 } 
 #header {
-padding:5px 10px;
-background:#fff;
+	padding:5px 10px;
+	background:#fff;
 }
 h1 {
-margin:0;
+	margin:0;
 }
 #nav {
-background-color: #036;	
-/*padding:5px 10px;*/
+	border: 1px black solid;
+	background-color: #036;	
 }
 #main {
-float:left;
-width:480px;
-padding:10px;
-background:#9c9;
+	float:left;
+	width:480px;
+	padding:10px;
 }
 h2 {
-margin:0 0 1em;
+	margin:0 0 1em;
 }
 #sidebar {
-float:right;
-width:230px;
-padding:10px;
-background:#99c;
+	float:right;
+	width:230px;
+	padding:10px;
+	text-align:right;
 }
 #footer {
-clear:both;
-padding:5px 10px;
-background:#cc9;
+	clear:both;
+	padding:5px 10px;
 }
 #footer p {
-margin:0;
+	margin:0;
 }
 ul#navlist
 {
-margin-left: 0;
-padding-left: 0;
-white-space: nowrap;
-/*border: 2px white solid;*/
+	margin-left: 0;
+	padding-left: 0;
+	white-space: nowrap;
+	/*border: 2px white solid;*/
 }
 
 #navlist li
 {
-display: inline;
-list-style-type: none;
+	display: inline;
+	list-style-type: none;
+	border: 1px black solid;
 }
 
-#navlist a { padding-left: 3px; /*padding: 3px 10px;*/}
+#navlist a { padding-right: 3px; padding-left: 3px; /*padding: 3px 10px;*/}
 
 #navlist a:link, #navlist a:visited
 {
 	font-family: 'Cabin Sketch', serif;
-	border-left: 2px white solid;
-color: #fff;
-background-color: #036;
-text-decoration: none;
+	color: #fff;
+
+	text-decoration: none;
 }
 
-#navlist a:hover
+#navlist a:hover, #navlist :hover
 {
-color: #fff;
-background-color: #369;
-text-decoration: none;
+	color: #fff;
+	background-color: #369;
+	text-decoration: none;
+}
+#navlist .current, #navlist .current a
+{
+	color: #fff;
+	background-color: #369;
+	text-decoration: none;
 }
 
 #header {
-  font-family: 'Cabin Sketch', serif;
-  font-size: 1.5em;
-  font-style: normal;
-  font-weight: 400;
-  text-shadow: 6px 6px 6px #ccc;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: 0em;
-  word-spacing: 0em;
-  line-height: 1.2;
+	font-family: 'Cabin Sketch', serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-weight: 400;
+	text-shadow: 6px 6px 6px #ccc;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: 0em;
+	word-spacing: 0em;
+	line-height: 1.2;
 }
 .contacts {
 	vertical-align: middle;
 }
 .footer_links {
 	float:right ;
-	margin-top:-50;
+	display: inline-block;
+
+}
+#validHtml {
+	background-image: url(http://www.shallowgallery.com/images/valid-html5small.png);	
+	height: 25px;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 71px;
+}
+#validCss {	
+	background-image : url(http://www.shallowgallery.com/images/vcss-bluesmall.png);	
+	height: 25px;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 71px;
+}
+#facebookLink {
+	background-image: url(http://www.shallowgallery.com/images/facebooksmall.png);	
+	height: 24px;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 25px;
+}
+#emailLink {
+	background-image : url(http://www.shallowgallery.com/images/mailsmall.png);
+	height: 25px;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 37px;
+}
+#footer p{
+	display: inline-block;
 }

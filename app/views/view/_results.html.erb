@@ -1,0 +1,13 @@
+	<p><%= raw results.name %><br />
+		<% if results.phone %>		
+			<%= results.phone %>
+			<%= image_tag("http://www.shallowgallery.com/images/contacts2.png", :class => "contacts") %><br />
+		<% end %>
+		<% if results.address %>
+			<%= results.address %><br />
+		<% end %>
+		<% if results.menu %>
+			<a href="<%= results.menu %>"> menu </a>	
+		<% end %>
+	</p>
+
