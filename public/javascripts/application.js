@@ -1,6 +1,10 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 jQuery(function($) {
+	// ajaxify filters - removed for lack of time to test 
+//	$("#tool-form").change(function() {
+//		$(this).closest("form").submit();    
+//	});
 	$("#loading").hide();
 	
 	  // create a convenient toggleLoading function
