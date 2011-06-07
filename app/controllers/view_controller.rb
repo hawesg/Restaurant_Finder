@@ -2,9 +2,17 @@ class ViewController < ApplicationController
 
   def index 
     @pagetitle = "All"
-    del = params[:deliver] || [true, false]
-    walk = params[:walk] || [true, false]
-    cat = params[:cat_id] || Category.all.collect(&:id)
+    if params[:deliver]
+      del = true
+    else
+      del = [true, false]
+    end
+    if params[:walk]
+      walk = true
+    else
+      walk = [true, false]
+    end
+    cat = params[:cat_id]
     @pagination = params[:paginate]
     if params[:cat_id]
       @results = Restaurant.limit(params[:limit] || 50 ).random.find_all_by_deliver_and_walk_and_category_id(del, walk, cat)
